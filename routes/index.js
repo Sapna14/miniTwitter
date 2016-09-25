@@ -1,9 +1,13 @@
 var express = require('express');
-var router = express.Router();
+var app = express();
+console.log("inside the index of routes ######");
+var usersController = require('./../controllers/users');
+var followersController = require('./../controllers/followers');
+var tweetsController = require('./../controllers/tweets');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+app.use('/users', usersController);
+app.use('/followers', followersController);
+app.use('/tweets', tweetsController);
 
-module.exports = router;
+module.exports = app;
+
