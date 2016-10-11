@@ -1,17 +1,3 @@
-// console.log("inside the users controller******	");
-// var Users = function(){
-// 	// var this= that;
-// 	this.check = function(){
-// 		console.log("printing the res from user controller%%%%%");
-// 	};
-// };
-
-// exports.Users = Users;
-
-// var UsersModel = require('./models/users');
-// UsersModel.check();
-
-
 var express = require('express');
 var router = express.Router();
 var usersModel  = require('../models/users')();

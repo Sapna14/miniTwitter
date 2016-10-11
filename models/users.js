@@ -1,7 +1,3 @@
-// var check = function(){
-// 	console.log("inside the model users ");
-// }
-
 var DB = require('../config/db');
 //DB.model('User', ...);
 
